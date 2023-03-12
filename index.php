@@ -525,15 +525,21 @@ printIterable2($iterator);
 
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
             Name: <input type="text" name="name" value="<?php echo $name;?>">
-            <span class="error">* <?php echo $nameErr;?></span>
+            <span class="error">
+                * <?php echo $nameErr;?>
+            </span>
             <br><br>
 
             E-mail: <input type="text" name="email" value="<?php echo $email;?>">
-            <span class="error">* <?php echo $emailErr;?></span>
+            <span class="error">
+                * <?php echo $emailErr;?>
+            </span>
             <br><br>
 
             Website: <input type="text" name="website" value="<?php echo $website;?>">
-            <span class="error"><?php echo $websiteErr;?></span>
+            <span class="error">
+                <?php echo $websiteErr;?>
+            </span>
             <br><br>
 
             Comment: <textarea name="comment" rows="5" cols="40">
@@ -555,18 +561,18 @@ printIterable2($iterator);
         </form>
 
         <?php
-        echo "<h2>Your Input:</h2>";
-        echo $name;
-        echo "<br>";
-        echo $email;
-        echo "<br>";
-        echo $website;
-        echo "<br>";
-        echo $comment;
-        echo "<br>";
-        echo $gender;
+            echo "Today is " . date("l");
+            echo "<h2>Your Input:</h2>";
+            echo $name;
+            echo "<br>";
+            echo $email;
+            echo "<br>";
+            echo $website;
+            echo "<br>";
+            echo $comment;
+            echo "<br>";
+            echo $gender;
         ?>
-
     </body>
 </html>
 <!-- PHP Form validation FINISH -->
